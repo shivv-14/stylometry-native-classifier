@@ -1,0 +1,29 @@
+# python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# environments / secrets
+venv/
+.venv/
+.env
+*.env
+
+# data (licensed corpora are never committed)
+data/raw/*
+data/interim/*
+data/processed/*
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+!data/processed/.gitkeep
+
+# trained models
+models/*
+!models/README.md
+
+# misc
+.DS_Store
+Thumbs.db
+.streamlit/secrets.toml
