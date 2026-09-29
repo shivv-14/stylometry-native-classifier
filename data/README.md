@@ -47,6 +47,36 @@ LOCNESS replaces the ICNALE ENS group. **Warning:** LOCNESS topics and task cond
 so topic and genre confounding is much higher and results are harder to interpret.
 LOCNESS has no reliable writer IDs; each essay is treated as its own writer.
 
+## Option B2 (used for the current results): W&I+LOCNESS, open download
+
+The BEA-2019 shared-task release of **Cambridge English Write & Improve (W&I)** learner
+essays plus **LOCNESS** native essays can be downloaded without registration:
+
+```bash
+python tasks.py download      # -> data/raw/wi_locness/ (json/ + licences)
+```
+
+and `data.source: wi_locness` (the current default). By downloading it you accept its
+licences (`licence.wi.txt`, `license.locness.txt`): **non-commercial research and
+education only, no redistribution**, cite Yannakoudakis et al. (2018) for W&I and credit
+CECL (UCLouvain) for LOCNESS. Excerpts under 100 words only.
+
+What the loader does:
+
+- `A/B/C.*.json`: learner essays; `writer_id = WI_<userid>`, proficiency = CEFR level
+  (A1–C2). Essays with no `userid` are dropped (their author is unknown, so writer
+  separation could not be guaranteed); the count is logged.
+- `N.dev.json`: 50 LOCNESS essays; no writer IDs, so each essay is its own writer;
+  proficiency `native`, L1 `ENG`.
+- Prompts are not given, so `topic` is empty and the cross-topic experiment (E6) is skipped.
+
+Caveats specific to this corpus (see also `docs/ethics_and_limitations.md`):
+only **50 native essays** are available, so the balanced dataset is small (≈100 writers)
+and scores have wide confidence intervals; W&I and LOCNESS were written on **different
+prompts under different conditions** (online practice tasks vs university essays), so
+topic and genre are confounded with the label; native essays are much longer before
+truncation.
+
 ## Option C: any corpus as CSV
 
 Put a CSV at `data/raw/dataset.csv` and set `data.source: csv`.

@@ -27,6 +27,24 @@ up any of them:
 - **Length**: longer or shorter texts change feature estimates. Texts are truncated to a
   fixed number of words and a length-only baseline is reported to detect this shortcut.
 
+## Corpus used for the current results (W&I+LOCNESS)
+
+ICNALE requires personal registration, so the published results use the openly
+downloadable W&I+LOCNESS corpus. This is a weaker design than ICNALE:
+
+- **Topic/genre/task confound**: learner essays are Write & Improve practice tasks
+  (letters, reviews, stories, essays), while LOCNESS essays are argumentative university
+  essays. The model can separate the classes by topic and genre words, not only by
+  native-like style. Character n-grams are especially able to pick up topic words.
+- **Tiny native class**: 50 native essays, so ≈100 writers after balancing and ≈20 test
+  writers per split. Expect wide confidence intervals and large seed-to-seed variation.
+- **Length**: native essays are much longer before truncation; after truncation to 200
+  words some learner texts remain shorter. The length-only baseline (B1) shows how much
+  this alone explains.
+- **No L1 metadata** for W&I learners, so per-L1 recall cannot be reported; recall per
+  CEFR level is the closest available fairness check.
+- **No prompt IDs**, so the cross-topic experiment (E6) cannot run.
+
 ## Dataset-specific correlations, not universal differences
 
 A coefficient saying "more semicolons → native" means only that in **this corpus, under

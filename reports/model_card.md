@@ -22,9 +22,12 @@ or forensic. Identifying authors. Texts outside short English argumentative essa
 
 ## Data
 
-ICNALE Written Essays (recommended): learner essays plus a native-speaker (ENS) group on
-the same two prompts. Balanced at writer level, texts under 120 words removed, texts
-truncated to 200 words. Counts per class are generated in
+Current models: **W&I+LOCNESS** (BEA-2019): Cambridge Write & Improve learner essays
+(CEFR A1–C2) and 50 LOCNESS native essays. Non-commercial research/education licence.
+Learners and natives wrote on different prompts, so topic/genre is confounded with the
+label, and the native class is very small. ICNALE Written Essays (same prompts for both
+groups) is the recommended corpus when available. Balanced at writer level, texts under
+120 words removed, texts truncated to 200 words. Counts per class are generated in
 `data/processed/data_summary.md` and stored in `models/metadata.json`.
 The data is not distributed with the model.
 
