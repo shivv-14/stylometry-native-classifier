@@ -83,4 +83,7 @@ def param_grid(feature_set: str, model: str, cfg: dict, tune_analyzer: bool = Tr
             grid["features__analyzer"] = list(analyzers)
         elif feature_set == "combined":
             grid["features__char__analyzer"] = list(analyzers)
+    weights = cfg["features"].get("handcrafted_weight_grid") or []
+    if feature_set == "combined" and len(weights) > 1 and model in ("lr", "svm"):
+        grid["features__transformer_weights"] = [{"handcrafted": w, "char": 1.0} for w in weights]
     return grid
