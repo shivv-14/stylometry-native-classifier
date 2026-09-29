@@ -1,0 +1,83 @@
+# Central configuration. Every script reads this file; nothing is hard-coded elsewhere.
+
+seed: 42
+seeds: [0, 1, 2, 3, 4]          # one writer-separated split per seed (mean +- std)
+
+paths:
+  raw_dir: data/raw
+  icnale_dir: data/raw/icnale
+  locness_dir: data/raw/locness
+  csv_path: data/raw/dataset.csv
+  interim_dir: data/interim
+  processed: data/processed/dataset.parquet
+  data_summary: data/processed/data_summary.md
+  feature_cache: data/interim/handcrafted_cache.parquet
+  models_dir: models
+  results_dir: reports/results
+  figures_dir: reports/figures
+
+data:
+  # which source to use: "icnale" (recommended), "icnale+locness", or "csv"
+  source: icnale
+  labels: {native: native, non_native: non_native}
+  positive_label: native
+  native_country_code: ENS
+
+  # ICNALE Written Essays file names, e.g. W_CHN_PTJ0_004_B1_1.txt
+  # Check the regex against your own copy; the loader stops with a clear error
+  # if a .txt file does not match.
+  icnale_filename_regex: '^W_(?P<country>[A-Z]{3})_(?P<topic>[A-Z]{3})\d*_(?P<writer>\d+)_(?P<proficiency>[A-Z0-9]+_\d+)(?:_[A-Za-z0-9]+)?\.txt$'
+  # LOCNESS: essays inside each .txt start with a header line such as <ALEV1001.1>
+  locness_header_regex: '^\s*<(?P<id>[^<>]+)>\s*$'
+
+  # lines at the top of a file that are metadata, not essay text
+  header_line_regex: '^\s*(<[^<>]+>|#.*|Topic:.*|Title:.*)\s*$'
+
+  min_words: 120
+  truncate_words: 200            # null to keep full texts
+  balance: downsample            # "downsample" (writer level) or "class_weight"
+  balance_strata: [l1, proficiency]
+
+split:
+  test_size: 0.2
+  cv_folds: 5
+
+features:
+  function_words: [the, a, an, of, to, in, and, for, with, but, on, at, from, as,
+                   by, that, which, this, it, is, be, not, or, so, if, there]
+  pos_tags: [NOUN, PROPN, VERB, ADJ, ADV, PRON, DET, ADP, CCONJ, SCONJ, AUX, PART, NUM]
+  ttr_window: 100
+  mattr_window: 50
+  long_word_len: 7
+  spacy_model: en_core_web_sm
+  spacy_batch_size: 64
+  char_ngrams:
+    analyzer: char
+    ngram_range: [3, 5]
+    min_df: 2
+    max_features: 5000
+    sublinear_tf: true
+  handcrafted_weight: 1.0        # weight of the handcrafted block in "combined"
+
+models:
+  lr:
+    max_iter: 2000
+    solver: liblinear
+    C: [0.01, 0.1, 1, 10]
+  svm:
+    C: [0.01, 0.1, 1, 10]
+    calibration_cv: 3
+  rf:
+    n_estimators: 300
+  tune_char_analyzer: [char, char_wb]
+
+evaluation:
+  bootstrap_samples: 1000
+  top_k_features: 20
+  length_baseline_flag_gap: 0.05  # flag if full model beats length-only by less than this (macro-F1)
+  distribution_features: [sent_mean_len, vocab_mattr, vocab_avg_word_len, pos_NOUN, punct_comma, fw_total]
+
+app:
+  warn_words: 120
+  min_words: 40
+  github_url: https://github.com/shivv-14/stylometry-native-classifier
