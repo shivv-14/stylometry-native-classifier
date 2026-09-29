@@ -1,0 +1,41 @@
+feature,coef,group,direction
+pos_PRON,1.894978256111548,pos,non_native
+fw_so,1.6564365062491855,function_words,non_native
+fw_to,1.328296326858076,function_words,non_native
+punct_period,1.084164101100924,punctuation,non_native
+pos_PART,1.0840836565865808,pos,non_native
+fw_or,1.0756068145307494,function_words,non_native
+pos_NUM,0.7933050476418785,pos,non_native
+sent_per_100w,0.7825681820847894,sentence,non_native
+fw_is,0.7122885460818541,function_words,non_native
+pos_VERB,0.6746120958878215,pos,non_native
+punct_exclamation,0.6653115840121604,punctuation,non_native
+pos_SCONJ,0.6192922201733906,pos,non_native
+char:'you',0.6085943315304506,char_ngrams,non_native
+pos_CCONJ,0.5916191353817958,pos,non_native
+char:' yo',0.575218216502622,char_ngrams,non_native
+char:' you',0.5679446170050855,char_ngrams,non_native
+char:'am ',0.5332314725465501,char_ngrams,non_native
+pos_ADV,0.5151443018195706,pos,non_native
+char:'ou ',0.5059942963954904,char_ngrams,non_native
+char:' tea',0.5006193394587065,char_ngrams,non_native
+pos_AUX,-1.8021900134353972,pos,native
+punct_parentheses,-1.688289516360663,punctuation,native
+vocab_avg_word_len,-1.5694247914265076,vocabulary,native
+pos_ADP,-1.4473027315056073,pos,native
+fw_at,-1.3426360415028826,function_words,native
+fw_of,-1.2215166731457727,function_words,native
+pos_NOUN,-1.2186632434495577,pos,native
+fw_an,-1.0231262627636823,function_words,native
+fw_be,-0.9432624435970673,function_words,native
+sent_max_len,-0.9353109830669016,sentence,native
+punct_dash,-0.8907187865325124,punctuation,native
+punct_quotes,-0.8822918642363644,punctuation,native
+fw_this,-0.80425429829849,function_words,native
+vocab_mattr,-0.8015620491282115,vocabulary,native
+fw_which,-0.7925525270370294,function_words,native
+sent_std_len,-0.7809604433939049,sentence,native
+fw_that,-0.7658164847227769,function_words,native
+sent_median_len,-0.6516688113445098,sentence,native
+punct_apostrophe,-0.6022630411147389,punctuation,native
+vocab_long_word_prop,-0.5631336890150058,vocabulary,native

@@ -1,0 +1,98 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1100' height='450' viewBox='0 0 1100 450'>
+<rect width='100%' height='100%' fill='white'/>
+<text x='550.0' y='20.0' font-size='13' text-anchor='middle' font-weight='bold' fill='#222' font-family='Helvetica, Arial, sans-serif'>Top 20 coefficients: char / svm (associated with the prediction on this dataset)</text>
+<text x='350.0' y='47.0' font-size='12' text-anchor='middle' font-weight='bold' fill='#222' font-family='Helvetica, Arial, sans-serif'>toward non_native</text>
+<rect x='200.0' y='57.0' width='300.0' height='14.0' fill='#e07b39' fill-opacity='1.0' stroke='none'/>
+<text x='194.0' y='68.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>char:&#x27; I &#x27;</text>
+<rect x='200.0' y='75.0' width='268.1' height='14.0' fill='#e07b39' fill-opacity='1.0' stroke='none'/>
+<text x='194.0' y='86.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>char:&#x27;you&#x27;</text>
+<rect x='200.0' y='93.0' width='267.9' height='14.0' fill='#e07b39' fill-opacity='1.0' stroke='none'/>
+<text x='194.0' y='104.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>char:&#x27; yo&#x27;</text>
+<rect x='200.0' y='111.0' width='266.5' height='14.0' fill='#e07b39' fill-opacity='1.0' stroke='none'/>
+<text x='194.0' y='122.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>char:&#x27; you&#x27;</text>
+<rect x='200.0' y='129.0' width='252.4' height='14.0' fill='#e07b39' fill-opacity='1.0' stroke='none'/>
+<text x='194.0' y='140.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>char:&#x27;ou &#x27;</text>
+<rect x='200.0' y='147.0' width='243.0' height='14.0' fill='#e07b39' fill-opacity='1.0' stroke='none'/>
+<text x='194.0' y='158.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>char:&#x27; you &#x27;</text>
+<rect x='200.0' y='165.0' width='243.0' height='14.0' fill='#e07b39' fill-opacity='1.0' stroke='none'/>
+<text x='194.0' y='176.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>char:&#x27;you &#x27;</text>
+<rect x='200.0' y='183.0' width='222.4' height='14.0' fill='#e07b39' fill-opacity='1.0' stroke='none'/>
+<text x='194.0' y='194.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>char:&#x27;am &#x27;</text>
+<rect x='200.0' y='201.0' width='211.8' height='14.0' fill='#e07b39' fill-opacity='1.0' stroke='none'/>
+<text x='194.0' y='212.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>char:&#x27; my&#x27;</text>
+<rect x='200.0' y='219.0' width='207.6' height='14.0' fill='#e07b39' fill-opacity='1.0' stroke='none'/>
+<text x='194.0' y='230.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>char:&#x27;my &#x27;</text>
+<rect x='200.0' y='237.0' width='206.2' height='14.0' fill='#e07b39' fill-opacity='1.0' stroke='none'/>
+<text x='194.0' y='248.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>char:&#x27; my &#x27;</text>
+<rect x='200.0' y='255.0' width='162.8' height='14.0' fill='#e07b39' fill-opacity='1.0' stroke='none'/>
+<text x='194.0' y='266.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>char:&#x27; am &#x27;</text>
+<rect x='200.0' y='273.0' width='154.8' height='14.0' fill='#e07b39' fill-opacity='1.0' stroke='none'/>
+<text x='194.0' y='284.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>char:&#x27;ke &#x27;</text>
+<rect x='200.0' y='291.0' width='150.0' height='14.0' fill='#e07b39' fill-opacity='1.0' stroke='none'/>
+<text x='194.0' y='302.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>char:&#x27; me &#x27;</text>
+<rect x='200.0' y='309.0' width='148.7' height='14.0' fill='#e07b39' fill-opacity='1.0' stroke='none'/>
+<text x='194.0' y='320.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>char:&#x27; your&#x27;</text>
+<rect x='200.0' y='327.0' width='148.7' height='14.0' fill='#e07b39' fill-opacity='1.0' stroke='none'/>
+<text x='194.0' y='338.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>char:&#x27;your&#x27;</text>
+<rect x='200.0' y='345.0' width='148.7' height='14.0' fill='#e07b39' fill-opacity='1.0' stroke='none'/>
+<text x='194.0' y='356.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>char:&#x27;your &#x27;</text>
+<rect x='200.0' y='363.0' width='142.4' height='14.0' fill='#e07b39' fill-opacity='1.0' stroke='none'/>
+<text x='194.0' y='374.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>char:&#x27;get&#x27;</text>
+<rect x='200.0' y='381.0' width='142.2' height='14.0' fill='#e07b39' fill-opacity='1.0' stroke='none'/>
+<text x='194.0' y='392.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>char:&#x27;king&#x27;</text>
+<rect x='200.0' y='399.0' width='140.5' height='14.0' fill='#e07b39' fill-opacity='1.0' stroke='none'/>
+<text x='194.0' y='410.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>char:&#x27; pl&#x27;</text>
+<line x1='200.0' y1='55.0' x2='200.0' y2='415.0' stroke='#222' stroke-width='0.8'/>
+<text x='200.0' y='429.0' font-size='9' text-anchor='middle' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>0.00</text>
+<text x='275.0' y='429.0' font-size='9' text-anchor='middle' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>0.00</text>
+<text x='350.0' y='429.0' font-size='9' text-anchor='middle' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>0.01</text>
+<text x='425.0' y='429.0' font-size='9' text-anchor='middle' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>0.01</text>
+<text x='500.0' y='429.0' font-size='9' text-anchor='middle' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>0.01</text>
+<text x='900.0' y='47.0' font-size='12' text-anchor='middle' font-weight='bold' fill='#222' font-family='Helvetica, Arial, sans-serif'>toward native</text>
+<rect x='750.0' y='57.0' width='300.0' height='14.0' fill='#2a6fdb' fill-opacity='1.0' stroke='none'/>
+<text x='744.0' y='68.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>char:&#x27; has&#x27;</text>
+<rect x='750.0' y='75.0' width='300.0' height='14.0' fill='#2a6fdb' fill-opacity='1.0' stroke='none'/>
+<text x='744.0' y='86.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>char:&#x27; has &#x27;</text>
+<rect x='750.0' y='93.0' width='300.0' height='14.0' fill='#2a6fdb' fill-opacity='1.0' stroke='none'/>
+<text x='744.0' y='104.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>char:&#x27;has &#x27;</text>
+<rect x='750.2' y='111.0' width='299.8' height='14.0' fill='#2a6fdb' fill-opacity='1.0' stroke='none'/>
+<text x='744.0' y='122.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>char:&#x27;has&#x27;</text>
+<rect x='782.2' y='129.0' width='267.8' height='14.0' fill='#2a6fdb' fill-opacity='1.0' stroke='none'/>
+<text x='744.0' y='140.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>char:&#x27;ica&#x27;</text>
+<rect x='803.3' y='147.0' width='246.7' height='14.0' fill='#2a6fdb' fill-opacity='1.0' stroke='none'/>
+<text x='744.0' y='158.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>char:&#x27;orm&#x27;</text>
+<rect x='824.8' y='165.0' width='225.2' height='14.0' fill='#2a6fdb' fill-opacity='1.0' stroke='none'/>
+<text x='744.0' y='176.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>char:&#x27;uter&#x27;</text>
+<rect x='828.4' y='183.0' width='221.6' height='14.0' fill='#2a6fdb' fill-opacity='1.0' stroke='none'/>
+<text x='744.0' y='194.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>char:&#x27; Bri&#x27;</text>
+<rect x='828.4' y='201.0' width='221.6' height='14.0' fill='#2a6fdb' fill-opacity='1.0' stroke='none'/>
+<text x='744.0' y='212.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>char:&#x27; Brit&#x27;</text>
+<rect x='828.4' y='219.0' width='221.6' height='14.0' fill='#2a6fdb' fill-opacity='1.0' stroke='none'/>
+<text x='744.0' y='230.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>char:&#x27;Bri&#x27;</text>
+<rect x='828.4' y='237.0' width='221.6' height='14.0' fill='#2a6fdb' fill-opacity='1.0' stroke='none'/>
+<text x='744.0' y='248.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>char:&#x27;Brit&#x27;</text>
+<rect x='841.4' y='255.0' width='208.6' height='14.0' fill='#2a6fdb' fill-opacity='1.0' stroke='none'/>
+<text x='744.0' y='266.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>char:&#x27;ain &#x27;</text>
+<rect x='841.6' y='273.0' width='208.4' height='14.0' fill='#2a6fdb' fill-opacity='1.0' stroke='none'/>
+<text x='744.0' y='284.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>char:&#x27;eric&#x27;</text>
+<rect x='841.6' y='291.0' width='208.4' height='14.0' fill='#2a6fdb' fill-opacity='1.0' stroke='none'/>
+<text x='744.0' y='302.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>char:&#x27;erica&#x27;</text>
+<rect x='841.6' y='309.0' width='208.4' height='14.0' fill='#2a6fdb' fill-opacity='1.0' stroke='none'/>
+<text x='744.0' y='320.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>char:&#x27;meric&#x27;</text>
+<rect x='842.2' y='327.0' width='207.8' height='14.0' fill='#2a6fdb' fill-opacity='1.0' stroke='none'/>
+<text x='744.0' y='338.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>char:&#x27;ican&#x27;</text>
+<rect x='845.8' y='345.0' width='204.2' height='14.0' fill='#2a6fdb' fill-opacity='1.0' stroke='none'/>
+<text x='744.0' y='356.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>char:&#x27; Eu&#x27;</text>
+<rect x='846.4' y='363.0' width='203.6' height='14.0' fill='#2a6fdb' fill-opacity='1.0' stroke='none'/>
+<text x='744.0' y='374.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>char:&#x27; bee&#x27;</text>
+<rect x='846.4' y='381.0' width='203.6' height='14.0' fill='#2a6fdb' fill-opacity='1.0' stroke='none'/>
+<text x='744.0' y='392.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>char:&#x27;bee&#x27;</text>
+<rect x='847.1' y='399.0' width='202.9' height='14.0' fill='#2a6fdb' fill-opacity='1.0' stroke='none'/>
+<text x='744.0' y='410.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>char:&#x27;form&#x27;</text>
+<line x1='1050.0' y1='55.0' x2='1050.0' y2='415.0' stroke='#222' stroke-width='0.8'/>
+<text x='750.0' y='429.0' font-size='9' text-anchor='middle' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>-0.01</text>
+<text x='825.0' y='429.0' font-size='9' text-anchor='middle' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>-0.01</text>
+<text x='900.0' y='429.0' font-size='9' text-anchor='middle' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>-0.00</text>
+<text x='975.0' y='429.0' font-size='9' text-anchor='middle' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>-0.00</text>
+<text x='1050.0' y='429.0' font-size='9' text-anchor='middle' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>0.00</text>
+</svg>

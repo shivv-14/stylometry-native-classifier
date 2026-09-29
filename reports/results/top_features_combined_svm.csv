@@ -1,0 +1,41 @@
+feature,coef,group,direction
+pos_PRON,0.2867349789240605,pos,non_native
+fw_so,0.19521011675827782,function_words,non_native
+pos_VERB,0.18804118812350104,pos,non_native
+fw_to,0.17950112168792756,function_words,non_native
+pos_PART,0.17691208385515747,pos,non_native
+punct_period,0.14665664326082017,punctuation,non_native
+sent_per_100w,0.13110595104144226,sentence,non_native
+fw_or,0.10770051139604282,function_words,non_native
+pos_SCONJ,0.10325954876705917,pos,non_native
+pos_NUM,0.08985056187742595,pos,non_native
+fw_for,0.07723556911348382,function_words,non_native
+punct_exclamation,0.07124565511413287,punctuation,non_native
+pos_CCONJ,0.07078388743309699,pos,non_native
+char:' I ',0.07052335135275416,char_ngrams,non_native
+char:'you',0.06884470978333407,char_ngrams,non_native
+char:' yo',0.0674909669374886,char_ngrams,non_native
+char:' you',0.0668998452776813,char_ngrams,non_native
+fw_is,0.06590911029229321,function_words,non_native
+fw_if,0.06447568899269783,function_words,non_native
+char:'ou ',0.061931620647723805,char_ngrams,non_native
+pos_ADP,-0.2529611004695178,pos,native
+vocab_avg_word_len,-0.24758181597436182,vocabulary,native
+fw_of,-0.22253942791865544,function_words,native
+pos_NOUN,-0.21503258194616526,pos,native
+punct_parentheses,-0.20509861492271564,punctuation,native
+vocab_long_word_prop,-0.15678806705556012,vocabulary,native
+pos_AUX,-0.15642920739192093,pos,native
+punct_dash,-0.14897298679819412,punctuation,native
+pos_DET,-0.14471072035223054,pos,native
+fw_at,-0.13826574914839243,function_words,native
+sent_max_len,-0.135185850118523,sentence,native
+fw_total,-0.12816045805106988,function_words,native
+fw_the,-0.12785307493035833,function_words,native
+fw_which,-0.12645341514385158,function_words,native
+fw_an,-0.12643346494572993,function_words,native
+fw_be,-0.11569857410361138,function_words,native
+sent_std_len,-0.1085676030968347,sentence,native
+fw_by,-0.10516742666742453,function_words,native
+vocab_mattr,-0.10224484821581792,vocabulary,native
+punct_quotes,-0.10216365778738883,punctuation,native

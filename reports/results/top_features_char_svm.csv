@@ -1,0 +1,41 @@
+feature,coef,group,direction
+char:' I ',0.014845960153824792,char_ngrams,non_native
+char:'you',0.013268867991602882,char_ngrams,non_native
+char:' yo',0.01325788423077094,char_ngrams,non_native
+char:' you',0.01318695025777416,char_ngrams,non_native
+char:'ou ',0.012490310809368252,char_ngrams,non_native
+char:' you ',0.012023666236482947,char_ngrams,non_native
+char:'you ',0.012023666236482947,char_ngrams,non_native
+char:'am ',0.01100534324110044,char_ngrams,non_native
+char:' my',0.010483142329747189,char_ngrams,non_native
+char:'my ',0.010274139610746472,char_ngrams,non_native
+char:' my ',0.010204865728089069,char_ngrams,non_native
+char:' am ',0.00805790826759587,char_ngrams,non_native
+char:'ke ',0.007662528737507886,char_ngrams,non_native
+char:' me ',0.007420892401070166,char_ngrams,non_native
+char:' your',0.007359603600576907,char_ngrams,non_native
+char:'your',0.007359603600576907,char_ngrams,non_native
+char:'your ',0.007359603600576907,char_ngrams,non_native
+char:'get',0.007047682662003905,char_ngrams,non_native
+char:'king',0.0070348007372789565,char_ngrams,non_native
+char:' pl',0.006954674114932461,char_ngrams,non_native
+char:' has',-0.00803411381150483,char_ngrams,native
+char:' has ',-0.00803411381150483,char_ngrams,native
+char:'has ',-0.00803411381150483,char_ngrams,native
+char:'has',-0.008029727420083626,char_ngrams,native
+char:'ica',-0.007171657781801882,char_ngrams,native
+char:'orm',-0.006607298018593403,char_ngrams,native
+char:'uter',-0.00602986750078048,char_ngrams,native
+char:' Bri',-0.005933825853361521,char_ngrams,native
+char:' Brit',-0.005933825853361521,char_ngrams,native
+char:'Bri',-0.005933825853361521,char_ngrams,native
+char:'Brit',-0.005933825853361521,char_ngrams,native
+char:'ain ',-0.005586898914007702,char_ngrams,native
+char:'eric',-0.005581887950948209,char_ngrams,native
+char:'erica',-0.005581887950948209,char_ngrams,native
+char:'meric',-0.005581887950948209,char_ngrams,native
+char:'ican',-0.0055660171501748824,char_ngrams,native
+char:' Eu',-0.005468269504887382,char_ngrams,native
+char:' bee',-0.005453319867512743,char_ngrams,native
+char:'bee',-0.005453319867512743,char_ngrams,native
+char:'form',-0.005433847319213383,char_ngrams,native

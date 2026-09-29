@@ -1,0 +1,41 @@
+feature,coef,group,direction
+char:'you',0.8760943469219744,char_ngrams,non_native
+char:' yo',0.8315048489492634,char_ngrams,non_native
+char:' I ',0.8259150097679528,char_ngrams,non_native
+char:' you',0.8219296933638927,char_ngrams,non_native
+char:'am ',0.7628478831719769,char_ngrams,non_native
+char:'ou ',0.7410878858425729,char_ngrams,non_native
+char:' you ',0.7094905174109796,char_ngrams,non_native
+char:'you ',0.7094905174109796,char_ngrams,non_native
+char:'my ',0.5882634108232474,char_ngrams,non_native
+char:' your',0.5809740534900445,char_ngrams,non_native
+char:'your',0.5809740534900445,char_ngrams,non_native
+char:'your ',0.5809740534900445,char_ngrams,non_native
+char:' tea',0.5808874237159657,char_ngrams,non_native
+char:' my',0.5744568951665364,char_ngrams,non_native
+char:'king',0.5550965128964247,char_ngrams,non_native
+char:' my ',0.5524379939257825,char_ngrams,non_native
+"char:'re,'",0.5514131367581921,char_ngrams,non_native
+char:' he ',0.5512270874096602,char_ngrams,non_native
+char:'kin',0.546211631313931,char_ngrams,non_native
+char:' he',0.5368727730615952,char_ngrams,non_native
+char:'s i',-0.5790221338293229,char_ngrams,native
+char:' has',-0.5621225165674409,char_ngrams,native
+char:' has ',-0.5621225165674409,char_ngrams,native
+char:'has ',-0.5621225165674409,char_ngrams,native
+char:'has',-0.5584788327176339,char_ngrams,native
+char:'ica',-0.5499231334111578,char_ngrams,native
+char:'red',-0.5458945999364541,char_ngrams,native
+char:'orm',-0.5433689701764645,char_ngrams,native
+char:'he i',-0.535685803077148,char_ngrams,native
+char:'s it',-0.5337474380515249,char_ngrams,native
+char:'Bri',-0.5318741862043003,char_ngrams,native
+char:'Brit',-0.5318741862043003,char_ngrams,native
+char:' Bri',-0.524140138250529,char_ngrams,native
+char:' Brit',-0.524140138250529,char_ngrams,native
+char:' Thi',-0.5155885630921883,char_ngrams,native
+char:'. Thi',-0.5155885630921883,char_ngrams,native
+char:'uter',-0.5073365780178658,char_ngrams,native
+char:'is i',-0.5043140556970763,char_ngrams,native
+char:'the i',-0.5040092521701133,char_ngrams,native
+char:' This',-0.49932092513422094,char_ngrams,native

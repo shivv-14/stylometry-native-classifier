@@ -1,0 +1,8 @@
+label,proficiency,texts,recall
+native,native,50,0.94
+non_native,A1,3,1.0
+non_native,A2,10,0.9
+non_native,B1,11,0.8181818181818182
+non_native,B2,10,1.0
+non_native,C1,11,0.7272727272727273
+non_native,C2,10,0.3

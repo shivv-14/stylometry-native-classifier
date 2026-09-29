@@ -1,0 +1,98 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1100' height='450' viewBox='0 0 1100 450'>
+<rect width='100%' height='100%' fill='white'/>
+<text x='550.0' y='20.0' font-size='13' text-anchor='middle' font-weight='bold' fill='#222' font-family='Helvetica, Arial, sans-serif'>Top 20 coefficients: combined / lr (associated with the prediction on this dataset)</text>
+<text x='350.0' y='47.0' font-size='12' text-anchor='middle' font-weight='bold' fill='#222' font-family='Helvetica, Arial, sans-serif'>toward non_native</text>
+<rect x='200.0' y='57.0' width='300.0' height='14.0' fill='#e07b39' fill-opacity='1.0' stroke='none'/>
+<text x='194.0' y='68.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>pos_PRON</text>
+<rect x='200.0' y='75.0' width='262.2' height='14.0' fill='#e07b39' fill-opacity='1.0' stroke='none'/>
+<text x='194.0' y='86.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>fw_so</text>
+<rect x='200.0' y='93.0' width='210.3' height='14.0' fill='#e07b39' fill-opacity='1.0' stroke='none'/>
+<text x='194.0' y='104.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>fw_to</text>
+<rect x='200.0' y='111.0' width='171.6' height='14.0' fill='#e07b39' fill-opacity='1.0' stroke='none'/>
+<text x='194.0' y='122.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>punct_period</text>
+<rect x='200.0' y='129.0' width='171.6' height='14.0' fill='#e07b39' fill-opacity='1.0' stroke='none'/>
+<text x='194.0' y='140.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>pos_PART</text>
+<rect x='200.0' y='147.0' width='170.3' height='14.0' fill='#e07b39' fill-opacity='1.0' stroke='none'/>
+<text x='194.0' y='158.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>fw_or</text>
+<rect x='200.0' y='165.0' width='125.6' height='14.0' fill='#e07b39' fill-opacity='1.0' stroke='none'/>
+<text x='194.0' y='176.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>pos_NUM</text>
+<rect x='200.0' y='183.0' width='123.9' height='14.0' fill='#e07b39' fill-opacity='1.0' stroke='none'/>
+<text x='194.0' y='194.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>sent_per_100w</text>
+<rect x='200.0' y='201.0' width='112.8' height='14.0' fill='#e07b39' fill-opacity='1.0' stroke='none'/>
+<text x='194.0' y='212.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>fw_is</text>
+<rect x='200.0' y='219.0' width='106.8' height='14.0' fill='#e07b39' fill-opacity='1.0' stroke='none'/>
+<text x='194.0' y='230.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>pos_VERB</text>
+<rect x='200.0' y='237.0' width='105.3' height='14.0' fill='#e07b39' fill-opacity='1.0' stroke='none'/>
+<text x='194.0' y='248.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>punct_exclamation</text>
+<rect x='200.0' y='255.0' width='98.0' height='14.0' fill='#e07b39' fill-opacity='1.0' stroke='none'/>
+<text x='194.0' y='266.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>pos_SCONJ</text>
+<rect x='200.0' y='273.0' width='96.3' height='14.0' fill='#e07b39' fill-opacity='1.0' stroke='none'/>
+<text x='194.0' y='284.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>char:&#x27;you&#x27;</text>
+<rect x='200.0' y='291.0' width='93.7' height='14.0' fill='#e07b39' fill-opacity='1.0' stroke='none'/>
+<text x='194.0' y='302.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>pos_CCONJ</text>
+<rect x='200.0' y='309.0' width='91.1' height='14.0' fill='#e07b39' fill-opacity='1.0' stroke='none'/>
+<text x='194.0' y='320.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>char:&#x27; yo&#x27;</text>
+<rect x='200.0' y='327.0' width='89.9' height='14.0' fill='#e07b39' fill-opacity='1.0' stroke='none'/>
+<text x='194.0' y='338.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>char:&#x27; you&#x27;</text>
+<rect x='200.0' y='345.0' width='84.4' height='14.0' fill='#e07b39' fill-opacity='1.0' stroke='none'/>
+<text x='194.0' y='356.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>char:&#x27;am &#x27;</text>
+<rect x='200.0' y='363.0' width='81.6' height='14.0' fill='#e07b39' fill-opacity='1.0' stroke='none'/>
+<text x='194.0' y='374.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>pos_ADV</text>
+<rect x='200.0' y='381.0' width='80.1' height='14.0' fill='#e07b39' fill-opacity='1.0' stroke='none'/>
+<text x='194.0' y='392.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>char:&#x27;ou &#x27;</text>
+<rect x='200.0' y='399.0' width='79.3' height='14.0' fill='#e07b39' fill-opacity='1.0' stroke='none'/>
+<text x='194.0' y='410.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>char:&#x27; tea&#x27;</text>
+<line x1='200.0' y1='55.0' x2='200.0' y2='415.0' stroke='#222' stroke-width='0.8'/>
+<text x='200.0' y='429.0' font-size='9' text-anchor='middle' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>0.00</text>
+<text x='275.0' y='429.0' font-size='9' text-anchor='middle' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>0.47</text>
+<text x='350.0' y='429.0' font-size='9' text-anchor='middle' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>0.95</text>
+<text x='425.0' y='429.0' font-size='9' text-anchor='middle' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>1.42</text>
+<text x='500.0' y='429.0' font-size='9' text-anchor='middle' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>1.89</text>
+<text x='900.0' y='47.0' font-size='12' text-anchor='middle' font-weight='bold' fill='#222' font-family='Helvetica, Arial, sans-serif'>toward native</text>
+<rect x='750.0' y='57.0' width='300.0' height='14.0' fill='#2a6fdb' fill-opacity='1.0' stroke='none'/>
+<text x='744.0' y='68.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>pos_AUX</text>
+<rect x='769.0' y='75.0' width='281.0' height='14.0' fill='#2a6fdb' fill-opacity='1.0' stroke='none'/>
+<text x='744.0' y='86.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>punct_parentheses</text>
+<rect x='788.7' y='93.0' width='261.3' height='14.0' fill='#2a6fdb' fill-opacity='1.0' stroke='none'/>
+<text x='744.0' y='104.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>vocab_avg_word_len</text>
+<rect x='809.1' y='111.0' width='240.9' height='14.0' fill='#2a6fdb' fill-opacity='1.0' stroke='none'/>
+<text x='744.0' y='122.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>pos_ADP</text>
+<rect x='826.5' y='129.0' width='223.5' height='14.0' fill='#2a6fdb' fill-opacity='1.0' stroke='none'/>
+<text x='744.0' y='140.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>fw_at</text>
+<rect x='846.7' y='147.0' width='203.3' height='14.0' fill='#2a6fdb' fill-opacity='1.0' stroke='none'/>
+<text x='744.0' y='158.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>fw_of</text>
+<rect x='847.1' y='165.0' width='202.9' height='14.0' fill='#2a6fdb' fill-opacity='1.0' stroke='none'/>
+<text x='744.0' y='176.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>pos_NOUN</text>
+<rect x='879.7' y='183.0' width='170.3' height='14.0' fill='#2a6fdb' fill-opacity='1.0' stroke='none'/>
+<text x='744.0' y='194.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>fw_an</text>
+<rect x='893.0' y='201.0' width='157.0' height='14.0' fill='#2a6fdb' fill-opacity='1.0' stroke='none'/>
+<text x='744.0' y='212.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>fw_be</text>
+<rect x='894.3' y='219.0' width='155.7' height='14.0' fill='#2a6fdb' fill-opacity='1.0' stroke='none'/>
+<text x='744.0' y='230.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>sent_max_len</text>
+<rect x='901.7' y='237.0' width='148.3' height='14.0' fill='#2a6fdb' fill-opacity='1.0' stroke='none'/>
+<text x='744.0' y='248.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>punct_dash</text>
+<rect x='903.1' y='255.0' width='146.9' height='14.0' fill='#2a6fdb' fill-opacity='1.0' stroke='none'/>
+<text x='744.0' y='266.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>punct_quotes</text>
+<rect x='916.1' y='273.0' width='133.9' height='14.0' fill='#2a6fdb' fill-opacity='1.0' stroke='none'/>
+<text x='744.0' y='284.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>fw_this</text>
+<rect x='916.6' y='291.0' width='133.4' height='14.0' fill='#2a6fdb' fill-opacity='1.0' stroke='none'/>
+<text x='744.0' y='302.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>vocab_mattr</text>
+<rect x='918.1' y='309.0' width='131.9' height='14.0' fill='#2a6fdb' fill-opacity='1.0' stroke='none'/>
+<text x='744.0' y='320.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>fw_which</text>
+<rect x='920.0' y='327.0' width='130.0' height='14.0' fill='#2a6fdb' fill-opacity='1.0' stroke='none'/>
+<text x='744.0' y='338.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>sent_std_len</text>
+<rect x='922.5' y='345.0' width='127.5' height='14.0' fill='#2a6fdb' fill-opacity='1.0' stroke='none'/>
+<text x='744.0' y='356.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>fw_that</text>
+<rect x='941.5' y='363.0' width='108.5' height='14.0' fill='#2a6fdb' fill-opacity='1.0' stroke='none'/>
+<text x='744.0' y='374.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>sent_median_len</text>
+<rect x='949.7' y='381.0' width='100.3' height='14.0' fill='#2a6fdb' fill-opacity='1.0' stroke='none'/>
+<text x='744.0' y='392.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>punct_apostrophe</text>
+<rect x='956.3' y='399.0' width='93.7' height='14.0' fill='#2a6fdb' fill-opacity='1.0' stroke='none'/>
+<text x='744.0' y='410.0' font-size='10' text-anchor='end' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>vocab_long_word_prop</text>
+<line x1='1050.0' y1='55.0' x2='1050.0' y2='415.0' stroke='#222' stroke-width='0.8'/>
+<text x='750.0' y='429.0' font-size='9' text-anchor='middle' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>-1.80</text>
+<text x='825.0' y='429.0' font-size='9' text-anchor='middle' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>-1.35</text>
+<text x='900.0' y='429.0' font-size='9' text-anchor='middle' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>-0.90</text>
+<text x='975.0' y='429.0' font-size='9' text-anchor='middle' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>-0.45</text>
+<text x='1050.0' y='429.0' font-size='9' text-anchor='middle' font-weight='normal' fill='#222' font-family='Helvetica, Arial, sans-serif'>0.00</text>
+</svg>
