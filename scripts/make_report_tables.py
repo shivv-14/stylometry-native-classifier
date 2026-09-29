@@ -128,6 +128,15 @@ def main(config_path: str | None = None, update_readme: bool | None = None) -> i
                   "Fairness check: writers with different first languages may be affected differently.", "",
                   l1.to_markdown(index=False), ""]
 
+    prof_path = res_dir / "proficiency_recall.csv"
+    if prof_path.exists():
+        pr = pd.read_csv(prof_path)
+        pr["recall"] = pr.recall.round(3)
+        lines += ["## Recall per proficiency level (best model, pooled over seeds)", "",
+                  "Share of each group's test texts classified correctly. Low recall for a level means "
+                  "those writers are more often labelled with the other class.", "",
+                  pr.to_markdown(index=False), ""]
+
     out = res_dir / "results.md"
     out.write_text("\n".join(lines), encoding="utf-8")
     print(f"wrote {rel(out)}")

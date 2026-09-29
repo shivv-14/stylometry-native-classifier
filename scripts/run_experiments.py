@@ -112,11 +112,13 @@ def main(config_path: str | None = None) -> int:
     # per-L1 recall of the best model, pooled over seeds (fairness check)
     best_runs = main_runs[(best_fs, best_model)]
     pooled = pd.concat([r.test.assign(pred=r.y_pred, seed=r.row["seed"]) for r in best_runs])
-    if pooled["l1"].notna().any():
-        l1 = (pooled.assign(correct=pooled.pred == pooled.label)
-              .groupby(["label", "l1"]).agg(texts=("correct", "size"), recall=("correct", "mean"))
-              .reset_index())
-        l1.to_csv(res_dir / "l1_recall.csv", index=False)
+    pooled.drop(columns=["text"]).to_csv(res_dir / "predictions_best.csv", index=False)
+    pooled = pooled.assign(correct=pooled.pred == pooled.label)
+    for col, fname in (("l1", "l1_recall.csv"), ("proficiency", "proficiency_recall.csv")):
+        # only useful when the column varies within a class
+        if pooled[col].notna().any() and pooled.groupby("label")[col].nunique().max() > 1:
+            (pooled.groupby(["label", col]).agg(texts=("correct", "size"), recall=("correct", "mean"))
+             .reset_index().to_csv(res_dir / fname, index=False))
 
     # ---- figures (seed 0 split) ---------------------------------------------
     curves = []
