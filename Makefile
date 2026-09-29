@@ -1,11 +1,14 @@
 PY ?= python
 
-.PHONY: setup prepare train evaluate app test
+.PHONY: setup download prepare train evaluate app test
 
 setup:
 	$(PY) -m pip install -r requirements.txt
 	$(PY) -m pip install -e .
 	$(PY) -m spacy download en_core_web_sm
+
+download:
+	$(PY) scripts/download_data.py
 
 prepare:
 	$(PY) scripts/prepare_data.py

@@ -2,7 +2,7 @@ import pandas as pd
 import pytest
 
 from stylometry.data.balance import balance_writers
-from stylometry.data.loaders import load_csv, parse_icnale_filename
+from stylometry.data.loaders import load_csv, load_wi_locness, parse_icnale_filename
 from stylometry.data.split import (WriterLeakageError, assert_no_writer_overlap, class_ratio, topic_split,
                                    writer_split)
 
@@ -67,3 +67,18 @@ def test_balance_keeps_both_classes_when_already_equal(synthetic_df):
     out = balance_writers(synthetic_df, seed=0, strata=["l1"])
     assert set(out.label) == {"native", "non_native"}
     assert len(out) == len(synthetic_df)
+
+
+def test_wi_locness_loader(tmp_path):
+    import json
+    (tmp_path / "json").mkdir()
+    learner = [{"text": "SYNTHETIC one", "id": "1-1", "userid": "u1", "cefr": "B1.ii", "edits": []},
+               {"text": "SYNTHETIC two", "id": "1-2", "userid": "u1", "cefr": "B1.ii", "edits": []},
+               {"text": "SYNTHETIC no writer", "id": "1-3", "userid": None, "cefr": "A2.i", "edits": []}]
+    native = [{"text": "SYNTHETIC three", "id": "7-1", "cefr": "N", "edits": []}]
+    (tmp_path / "json" / "B.train.json").write_text("\n".join(map(json.dumps, learner)), encoding="utf-8")
+    (tmp_path / "json" / "N.dev.json").write_text("\n".join(map(json.dumps, native)), encoding="utf-8")
+    df = load_wi_locness(tmp_path)
+    assert sorted(df.label) == ["native", "non_native", "non_native"]
+    assert df[df.label == "non_native"].writer_id.nunique() == 1
+    assert set(df[df.label == "non_native"].proficiency) == {"B1"}

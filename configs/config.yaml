@@ -7,6 +7,7 @@ paths:
   raw_dir: data/raw
   icnale_dir: data/raw/icnale
   locness_dir: data/raw/locness
+  wi_locness_dir: data/raw/wi_locness
   csv_path: data/raw/dataset.csv
   interim_dir: data/interim
   processed: data/processed/dataset.parquet
@@ -17,8 +18,9 @@ paths:
   figures_dir: reports/figures
 
 data:
-  # which source to use: "icnale" (recommended), "icnale+locness", or "csv"
-  source: icnale
+  # which source to use: "icnale" (recommended, needs registration), "icnale+locness",
+  # "wi_locness" (open download: python tasks.py download), or "csv"
+  source: wi_locness
   labels: {native: native, non_native: non_native}
   positive_label: native
   native_country_code: ENS
@@ -58,6 +60,7 @@ features:
     max_features: 5000
     sublinear_tf: true
   handcrafted_weight: 1.0        # weight of the handcrafted block in "combined"
+  handcrafted_weight_grid: [1.0, 0.3, 0.1]   # tuned by CV (standardised features can swamp TF-IDF)
 
 models:
   lr:

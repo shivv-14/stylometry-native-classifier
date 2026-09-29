@@ -29,6 +29,9 @@ Option B - LOCNESS as the native class (topic/genre confounding is higher)
   2. Put the LOCNESS .txt files in data/raw/locness/ and the ICNALE files in data/raw/icnale/
   3. Set data.source: icnale+locness in configs/config.yaml
 
+Option B2 - W&I+LOCNESS (open download, non-commercial research licence)
+  Run: python tasks.py download   (then set data.source: wi_locness)
+
 Option C - any corpus as CSV
   Put a CSV at data/raw/dataset.csv with columns text,label,writer_id
   (optional: topic,l1,proficiency; label must be native or non_native) and
@@ -128,6 +131,45 @@ def load_locness(directory: str | Path, header_pattern: str) -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 
+def load_wi_locness(directory: str | Path) -> pd.DataFrame:
+    """W&I+LOCNESS v2.1 (BEA-2019), json/*.json with one essay per line.
+
+    A/B/C files = Write & Improve learner essays (CEFR level in 'cefr', writer in 'userid');
+    essays without a userid are dropped.
+    N file = LOCNESS native essays; they have no user ID, so each essay is its own writer.
+    Prompts are not given, so topic is unknown.
+    """
+    import json
+
+    directory = Path(directory)
+    files = sorted(directory.rglob("*.json"))
+    if not files:
+        raise DataNotFoundError(f"No .json files in {directory}")
+    rows, no_writer = [], 0
+    for f in files:
+        with open(f, encoding="utf-8") as fh:
+            for line in fh:
+                if not line.strip():
+                    continue
+                r = json.loads(line)
+                cefr = str(r.get("cefr") or "")
+                native = cefr == "N" or f.name.startswith("N.")
+                if native:
+                    writer, prof, l1 = f"LOC_{r['id']}", "native", "ENG"
+                else:
+                    if not r.get("userid"):
+                        # author unknown: could share a writer with other essays, so drop it
+                        no_writer += 1
+                        continue
+                    writer, prof, l1 = f"WI_{r['userid']}", cefr.split(".")[0] or None, None
+                rows.append({"text": r["text"], "doc_id": f"{f.stem}:{r['id']}", "writer_id": writer,
+                             "label": "native" if native else "non_native", "l1": l1, "topic": None,
+                             "proficiency": prof, "source": "wi+locness"})
+    if no_writer:
+        print(f"wi_locness: dropped {no_writer} learner essays without a user ID (writer separation cannot be checked)")
+    return pd.DataFrame(rows).drop_duplicates("doc_id").reset_index(drop=True)
+
+
 def load_csv(path: str | Path) -> pd.DataFrame:
     path = Path(path)
     if not path.exists():
@@ -160,6 +202,8 @@ def load_raw(cfg: dict, root: Path) -> pd.DataFrame:
     source = d["source"]
     if source == "csv":
         return load_csv(root / p["csv_path"])
+    if source == "wi_locness":
+        return load_wi_locness(root / p["wi_locness_dir"])
     df = load_icnale(root / p["icnale_dir"], d["icnale_filename_regex"], d["native_country_code"])
     if source == "icnale":
         return df

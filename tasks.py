@@ -1,6 +1,6 @@
 """Cross-platform task runner (use instead of the Makefile on Windows).
 
-    python tasks.py setup | prepare | train | evaluate | app | test | all
+    python tasks.py setup | download | prepare | train | evaluate | app | test | all
 """
 import subprocess
 import sys
@@ -11,6 +11,7 @@ TASKS = {
     "setup": [[PY, "-m", "pip", "install", "-r", "requirements.txt"],
               [PY, "-m", "pip", "install", "-e", "."],
               [PY, "-m", "spacy", "download", "en_core_web_sm"]],
+    "download": [[PY, "scripts/download_data.py"]],
     "prepare": [[PY, "scripts/prepare_data.py"]],
     "train": [[PY, "-m", "stylometry.models.train"]],
     "evaluate": [[PY, "scripts/run_experiments.py"],
@@ -18,7 +19,7 @@ TASKS = {
     "app": [[PY, "-m", "streamlit", "run", "app/streamlit_app.py"]],
     "test": [[PY, "-m", "pytest", "-q"]],
 }
-TASKS["all"] = TASKS["prepare"] + TASKS["train"] + TASKS["evaluate"] + TASKS["test"]
+TASKS["all"] = TASKS["download"] + TASKS["prepare"] + TASKS["train"] + TASKS["evaluate"] + TASKS["test"]
 
 
 def main(names):
