@@ -129,6 +129,15 @@ pipe = load_model(f"{feature_set}_{model_key}")
 # ---- input ---------------------------------------------------------------------
 if "text" not in st.session_state:
     st.session_state.text = ""
+# demo link: ?example=1 pre-fills an example passage and runs the analysis once
+auto_example = st.query_params.get("example")
+auto_run = False
+if auto_example and not st.session_state.get("auto_done"):
+    names = list(EXAMPLES)
+    if auto_example.isdigit() and 1 <= int(auto_example) <= len(names):
+        st.session_state.text = EXAMPLES[names[int(auto_example) - 1]]
+        auto_run = True
+    st.session_state.auto_done = True
 cols = st.columns(len(EXAMPLES))
 for col, (name, txt) in zip(cols, EXAMPLES.items()):
     if col.button(name, width="stretch"):
@@ -136,7 +145,7 @@ for col, (name, txt) in zip(cols, EXAMPLES.items()):
 text = st.text_area("Paste an English passage (ideally 120+ words)", key="text", height=240)
 v = validate_text(text, cfg["app"]["min_words"], cfg["app"]["warn_words"])
 st.caption(f"Word count: {v.words}")
-analyze = st.button("Analyze writing", type="primary")
+analyze = st.button("Analyze writing", type="primary") or auto_run
 
 if analyze:
     if not v.ok:
