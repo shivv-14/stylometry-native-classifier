@@ -1,17 +1,39 @@
-"""Figures written to reports/figures/."""
+"""Figures written to reports/figures/.
+
+matplotlib (PNG) is used when it can be loaded; otherwise the SVG versions in
+svg_plots.py are written instead (same content, no compiled dependencies).
+"""
 from __future__ import annotations
 
+import functools
 from pathlib import Path
 
-import matplotlib
+import numpy as np
+import pandas as pd
 
-matplotlib.use("Agg")
-import matplotlib.pyplot as plt  # noqa: E402
-import numpy as np  # noqa: E402
-import pandas as pd  # noqa: E402
-from sklearn.metrics import ConfusionMatrixDisplay, RocCurveDisplay  # noqa: E402
+from . import svg_plots
+from .metrics import LABELS
 
-from .metrics import LABELS  # noqa: E402
+try:
+    import matplotlib
+
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+    from sklearn.metrics import ConfusionMatrixDisplay, RocCurveDisplay
+    HAVE_MATPLOTLIB = True
+except (ImportError, OSError) as e:          # e.g. DLL blocked by an application-control policy
+    HAVE_MATPLOTLIB = False
+    print(f"matplotlib unavailable ({e.__class__.__name__}); writing SVG figures instead")
+
+
+def _fallback(fn):
+    """Use the SVG implementation of the same name when matplotlib is missing."""
+    @functools.wraps(fn)
+    def wrapper(*args, **kwargs):
+        impl = fn if HAVE_MATPLOTLIB else getattr(svg_plots, fn.__name__)
+        return impl(*args, **kwargs)
+    return wrapper
+
 
 CLASS_COLORS = {"native": "#2a6fdb", "non_native": "#e07b39"}
 
@@ -23,6 +45,7 @@ def _save(fig, path: Path):
     plt.close(fig)
 
 
+@_fallback
 def confusion_matrix_plot(y_true, y_pred, title: str, path: Path):
     fig, ax = plt.subplots(figsize=(4, 3.6))
     ConfusionMatrixDisplay.from_predictions(y_true, y_pred, labels=LABELS, ax=ax, cmap="Blues", colorbar=False)
@@ -30,6 +53,7 @@ def confusion_matrix_plot(y_true, y_pred, title: str, path: Path):
     _save(fig, path)
 
 
+@_fallback
 def roc_plot(curves: list[tuple[str, np.ndarray, np.ndarray]], path: Path, positive: str = "native"):
     """curves: (name, y_true, positive-class score)."""
     fig, ax = plt.subplots(figsize=(5, 4.5))
@@ -41,6 +65,7 @@ def roc_plot(curves: list[tuple[str, np.ndarray, np.ndarray]], path: Path, posit
     _save(fig, path)
 
 
+@_fallback
 def top_features_plot(top: pd.DataFrame, title: str, path: Path, k: int = 20):
     if top.empty:
         return
@@ -57,6 +82,7 @@ def top_features_plot(top: pd.DataFrame, title: str, path: Path, k: int = 20):
     _save(fig, path)
 
 
+@_fallback
 def ablation_plot(abl: pd.DataFrame, path: Path):
     """abl: columns group, f1_drop_mean, f1_drop_std."""
     d = abl.sort_values("f1_drop_mean")
@@ -68,6 +94,7 @@ def ablation_plot(abl: pd.DataFrame, path: Path):
     _save(fig, path)
 
 
+@_fallback
 def distribution_plots(features: pd.DataFrame, labels: pd.Series, columns: list[str], path: Path):
     cols = [c for c in columns if c in features.columns]
     n = len(cols)
