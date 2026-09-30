@@ -138,7 +138,7 @@ def main(config_path: str | None = None, update_readme: bool | None = None) -> i
                   pr.to_markdown(index=False), ""]
 
     out = res_dir / "results.md"
-    out.write_text("\n".join(lines), encoding="utf-8")
+    out.write_text("\n".join(lines), encoding="utf-8", newline="\n")
     print(f"wrote {rel(out)}")
 
     if update_readme:
@@ -157,7 +157,8 @@ def inject_readme(block: str, readme: Path = PROJECT_ROOT / "README.md") -> None
     if not pattern.search(text):
         print("README.md has no RESULTS markers; skipped")
         return
-    readme.write_text(pattern.sub(lambda m: m.group(1) + block + m.group(2), text), encoding="utf-8")
+    readme.write_text(pattern.sub(lambda m: m.group(1) + block + m.group(2), text), encoding="utf-8",
+                      newline="\n")
     print("updated results table in README.md")
 
 

@@ -103,7 +103,7 @@ def main(config_path: str | None = None) -> int:
             "word_count_original", "word_count"]
     df[cols].to_parquet(out, index=False)
     summary = summarize(df, dropped, cfg)
-    resolve(cfg, "data_summary").write_text(summary, encoding="utf-8")
+    resolve(cfg, "data_summary").write_text(summary, encoding="utf-8", newline="\n")
     print(f"saved {len(df)} texts to {rel(out)}")
     print(summary)
     return 0

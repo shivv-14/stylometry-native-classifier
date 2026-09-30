@@ -46,7 +46,7 @@ class Svg:
         body = "\n".join(self.items)
         path.write_text(f"<svg xmlns='http://www.w3.org/2000/svg' width='{self.w}' height='{self.h}' "
                         f"viewBox='0 0 {self.w} {self.h}'>\n<rect width='100%' height='100%' fill='white'/>\n"
-                        f"{body}\n</svg>\n", encoding="utf-8")
+                        f"{body}\n</svg>\n", encoding="utf-8", newline="\n")
         return path
 
 
