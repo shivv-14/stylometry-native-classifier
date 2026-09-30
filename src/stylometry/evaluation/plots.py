@@ -89,7 +89,7 @@ def ablation_plot(abl: pd.DataFrame, path: Path):
     fig, ax = plt.subplots(figsize=(6, 3.2))
     ax.barh(d.group, d.f1_drop_mean, xerr=d.f1_drop_std, color="#6c5ce7", capsize=3)
     ax.axvline(0, c="k", lw=0.6)
-    ax.set_xlabel("drop in macro-F1 when the group is removed (mean ± std over seeds)")
+    ax.set_xlabel("drop in macro-F1 when removed (mean ± std, 5 seeds)")
     ax.set_title("Feature-group ablation (LR, handcrafted, writer-separated)", fontsize=10)
     _save(fig, path)
 
